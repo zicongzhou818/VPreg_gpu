@@ -2,7 +2,7 @@ clc
 clear
 close all
 
-home_is = 'C:\Users\asonz\Documents\Old_Disk\ZicongZhouC\Study\Research\Codes\template_local_FCD_vpreg\VPreg_gpu';
+home_is = 'path_to_the_folder\VPreg_gpu';
 ls_all = dir(fullfile(home_is, '**'));
 ls_img_mov = ls_all(contains({ls_all.name},'img_mov.nii.gz'));
 ls_img_mov_name = {ls_img_mov.name};
