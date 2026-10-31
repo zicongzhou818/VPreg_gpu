@@ -258,7 +258,7 @@ I_m_phi = imresize3(I_m_phi, [nxm nym nzm]);
 toc_phi = toc
 
 tic;
-[~,~,~,phi_x_inv,phi_y_inv,phi_z_inv] = VP_LM_gpu(nxf, nyf, nzf, phi_x_interm, phi_y_interm, phi_z_interm, X, Y, Z);
+[~,~,~,phi_x_inv,phi_y_inv,phi_z_inv] = VP_LM_simplified(nxf, nyf, nzf, phi_x_interm, phi_y_interm, phi_z_interm, X, Y, Z);
 toc_phi_inv = toc
 
 phi_inv = zeros(nxf, nyf, nzf, 3, 'single');
